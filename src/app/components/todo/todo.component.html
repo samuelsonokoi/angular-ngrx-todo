@@ -1,0 +1,5 @@
+<app-add-todo></app-add-todo>
+<div class="card" *ngFor="let todo of todos; let i = index">
+  <span>{{ todo.title }}</span>
+  <button class="btn" (click)="delete(i)">x</button>
+</div>
